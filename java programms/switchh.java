@@ -12,7 +12,7 @@ class Switch
 public static void main(String[] args)
 {
 int a=20;
-Switch (a)
+switch (a)
 {
  case 10: System.out.println("hisar");
 break;
