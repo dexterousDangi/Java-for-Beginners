@@ -12,7 +12,7 @@ class Switch
 public static void main(String[] args)
 {
 int a = 10;
-Switch (a) //'a' can be - int,char,short,byte,string.
+switch (a) //'a' can be - int,char,short,byte,string.
 {
 case 10: System.out.println("hisar");
 break;

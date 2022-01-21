@@ -12,13 +12,13 @@ class Switch
 public static void main(String[] args)
 {
 int a=20;
-switch (a)
+switch (a==20)
 {
- case 10: System.out.println("hisar");
+ case 10 : System.out.println("hisar");
 break;
-case 20: System.out.println("haryana");
+case 20 : System.out.println("haryana");
 break;
-case 30: System.out.println("india");
+case 30 : System.out.println("india");
 break;
 default: System.out.println("home/default");
 break;
