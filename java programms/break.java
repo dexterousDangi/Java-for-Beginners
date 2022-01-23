@@ -1,14 +1,16 @@
-class  Fortel
+// transfer statements, example of break
+class Break
 {
 public static void main(String []args)
 {
-for (int i=0;i<0;i++)
-{
-if(i==5)
-{
+System.out.println("d");
+System.out.println("d");
 break;
+System.out.println("d");
+System.out.println("d");
+
 }
-System.out.println(i);
 }
-}
-}
+/* compile time error be like'
+break is used out the switch or loop statements
+*/
