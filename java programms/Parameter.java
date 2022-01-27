@@ -7,14 +7,14 @@ class Parameter
 void m1(int a, char ch) // variable declared inside the method are local variables
 {
 System.out.println(" Instance method m1");
-System.out.println(a);
+System.out.println(a );
 System.out.println(ch);
 
 }
 static void m2(String str, double d)
 {
 System.out.println(" Static method m2");
-System.out.println(str);
+System.out.println(str +d);
 System.out.println(d);
 
 }
