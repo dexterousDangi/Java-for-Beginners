@@ -21,6 +21,6 @@ public static void main(String []args)
 {
 Work w =new Work();
 w.m1();
-w.m1(12);
+
 }
 }

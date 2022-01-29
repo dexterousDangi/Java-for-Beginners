@@ -6,6 +6,7 @@ but didn't accept inner method concept.
 
 */
 //calling another method while executing the method
+//one method able to call mupltiple methods at a time.
 
  class Make 
 {
@@ -18,7 +19,7 @@ m2();    // instance method calling in instance area (can be accessed directly))
       // after executing all the method statement then control returns to the m2 method
 void m2()
 {
-m3();
+m3(12);
 System.out.println(" Instance method : m2");
 }
 void m3(int a)
