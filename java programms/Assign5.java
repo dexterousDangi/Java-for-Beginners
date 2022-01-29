@@ -21,23 +21,23 @@ public static void main(String []args)
 Teso t = new Teso(); // to call the method we must creat a object
 
 X x=new X();  //creating required object by various methods
-Emp e1 =new Emp();
+Emp e1 =new Emp();// objects of different classes
 
 
 t.m1(x,e1);  // expecting two arguments
          // create the required parameter before calling the method
          //creare the object and pass the reference variable here
          // here class name is important we can pass any variable
-// shortcut for above three lines of code, we can use
-//t.m1(new X(), new Emp());
+         // shortcut for above three lines of code, we can use
+        //t.m1(new X(), new Emp());
 
 
 Y y = new Y();
 Student s = new Student();
 
 Teso.m2(y,s);
-//instead of above three lines we can use the following code which we will learn in constructors
-//Teso.m2(new Y(), new Student());
+            //instead of above three lines we can use the following code which we will learn in constructors
+            //Teso.m2(new Y(), new Student());
 }
 }
 /* in the real time these classes may belong to different 
