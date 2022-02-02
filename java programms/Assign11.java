@@ -1,6 +1,6 @@
 // example no.-
 // from vikrams laptop
-// when return type is object not the primitive
+// when return type is object not the primitive type
 // here we decalre two method of different class
 // and at project level these classes belongs to the different modules of the project
 // in this application we are using two extra classes (Emp and X )
