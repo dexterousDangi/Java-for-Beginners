@@ -4,7 +4,7 @@ return value must be same as the return type of the method
 it is a well practice to store the return value and print it
 to check the status of the method's working condition
 Whenever we try to print the return value it will print the "hash value".
-
+Here method have primitive type return type not the object/class type ( ssee Assign 14.java file)
 */
 
 class Return
