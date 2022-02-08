@@ -11,7 +11,7 @@ eid =45;
 ename= "Dragon";
 esal = 5463434.3f;
 }
-Team()
+Team(int a)
 {
  System.out.println("second zero arguemnt constructor");
 } 
