@@ -32,3 +32,5 @@ e1.disp();
 }
 
 // becaue the method was unable to access the local variables which were passed into the constructor
+// what will be the output: it is the default value of the local variables o,null,o.o
+// to find out the right approach visit the next file Assign22.java
