@@ -21,25 +21,26 @@ System.out.println("static block only executed once");
 //declare a constructor here
 
 Iota ()
-{
+{this('j');
 System.out.println("constructor here");
 } 
 // another constructor with one argument
 
 Iota ( char ch)
 {
-System.out.println("one agr cost   "+ch);
+System.out.println("one agr cosnt   "+ch);
 }
 
 public static void main(String []args)
 {
+System.out.println("main method");
 new Iota();
  new Iota('d');
-System.out.println("main method");
+
 }
 }
 
-// instance block will automatically be called when ever you create a object.
+// instance block will automatically be called when ever you create a "object".
 //static blocks memory is allocated during class loading.
 // form main method, static block, instance block and constructors
 // first static block is executed then main method then instance block and then constructors.

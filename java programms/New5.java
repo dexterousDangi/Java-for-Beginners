@@ -2,7 +2,7 @@
 the starting of the constructor only when there is no 
 this or super keyword is declared inside the constructor
 */
-   // here we are not using this or super keyword in any constructor
+   // here we are not using this(); or super(); keyword in any constructor
 class Parent 
 {
 Parent ()
@@ -34,7 +34,7 @@ F:\java by dragon\java programms>java Child
 zero argument constructor in parent class
 zero argument const in child class
 */
-  // when you use this keyword in "child(int a )" 
+  // when you use "this()" keyword in "child(int a )" 
 /*
 output:F:\java by dragon\java programms>java Child
 zero argument constructor in parent class
