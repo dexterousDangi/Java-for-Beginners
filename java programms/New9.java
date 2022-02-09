@@ -1,4 +1,4 @@
-// parent class or super class static block and 
+// parent class or super class static block 
 
 class Parent 
 {
@@ -37,7 +37,7 @@ System.out.println(" child class o - arg cons");
 }
 public static void main(String []args)
 {
-new Child();
+//new Child();
 new Child();  
 
 }
