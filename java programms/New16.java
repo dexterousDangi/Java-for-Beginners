@@ -60,3 +60,36 @@ void m1()
 
 
 // imp_*  increasing order of permission: private-> default->protected-> public modifier.
+
+
+
+//case no 3: increasing the level of permission
+
+
+/*
+class Parent
+{
+protected void m1()  // protected modifiers can be accessed in same package and in the child class
+{
+System.out.println("parent m1");
+}
+}
+class Child extends Parent
+{
+ public void m1()   // public  modifier can be accessed by any package 
+
+{
+System.out.println("child m1");
+}
+public static void main (String []args)
+{ System.out.println("child main method");
+ new Child().m1();
+}
+}
+
+*/
+
+// output: child main method
+        // child m1
+
+
