@@ -34,5 +34,8 @@ c.m1();
 c.m2();
 c.m3();
 c.m4();
+Parent p= new Child();  // subtype polymorphism concept( previous topic)
+p.m1();
+p.m4();
 }
 }
