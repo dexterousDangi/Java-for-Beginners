@@ -1,3 +1,6 @@
+// basic of interface
+
+
 interface Id   //by default abstract
 {             
 

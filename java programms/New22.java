@@ -65,7 +65,7 @@ Test1  r = new Test1();
 
 r.m1();
 
-// we can also call methods using reference variable of interface
+// we can also call methods using reference variable of interface(like subtype polymorphism)
   
 Id i= new Test1();
 i.m2();
