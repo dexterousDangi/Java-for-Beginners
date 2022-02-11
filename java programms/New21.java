@@ -44,6 +44,18 @@ Test t = new Test();
 t.m1();
 t.m2();
 t.m3();
+   
+ // there is another way of calling these methods also
+  // like we did into polymorphism.(creating the object of child class and storing 
+     // that value into reference variable of parent class).
+
+/*
+Id i = new Test();
+i.m1();
+i.m2();
+i.m3();
+*/
+
 }
 }
  /* intitally we know that method in interface is public and abstract
