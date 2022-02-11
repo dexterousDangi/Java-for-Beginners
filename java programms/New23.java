@@ -40,3 +40,11 @@ abstract class F implements Id1,Id2
 
 //you must write all the implementation into class F, otherwise you have to declare 
 // class F as abstract class.
+
+
+// class A extends B implements Id1,Id2 ---> valid  (such expression are allowed in java)
+
+// class A implements Id1,Id2 extends B ---> Invalid statement
+
+//if you are using 'extends' and 'implements' keywords in one statement then
+// "extends" keyword always be first to use. 
