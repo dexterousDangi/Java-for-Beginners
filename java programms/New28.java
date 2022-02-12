@@ -54,6 +54,9 @@ t.m2();
 X x = new T();  // subtype polymorphism
 x.m1();
 x.m2();
+Id i= new T();  // subtype polymorphism
+i.m1();
+i.m2();
 }
 }
 
@@ -63,6 +66,8 @@ x.m2();
 F:\java by dragon\java programms>javac New28.java
 
 F:\java by dragon\java programms>java T
+interface method m1--> adaptor class -->normal class
+interface method m2--> adaptor class -->normal class
 interface method m1--> adaptor class -->normal class
 interface method m2--> adaptor class -->normal class
 interface method m1--> adaptor class -->normal class
