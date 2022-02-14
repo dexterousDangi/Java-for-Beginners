@@ -1,7 +1,9 @@
 // main method of java is run by jvm
 // total 5 type(public,static , strictfp, final,synchronized) of modifiers
 // are allowed/accepted by java out of which 2 are mandatory(public, static)
-
+// synchronized modifier means that only one thread(small user defined tasks are called threads) will 
+// able to access it at a time. after that next modifier can access it . if we declare our main method as
+// synchronized , then only one jvm will able to run it at a time (not multiple jvms as they do it on real time).
 
 
 class Main
