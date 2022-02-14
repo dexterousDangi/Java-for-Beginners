@@ -2,7 +2,7 @@
 public 'setter' and 'getter' methods. setter methods are those methods used to 
 set/modify the value of private instance variables and getters are those methods
 which retrieve/get the value of private instance variables. 
-* Using javaBean class anyone(any object/client/employee) can set and get the 
+* Using javaBean class anyone(any object/client(class)/employee) can set and get the 
 values.
 */
 
