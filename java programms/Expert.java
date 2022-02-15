@@ -1,4 +1,4 @@
-// check the case sensivity of java alphab
+// Information about Package
 
 
 package AlphA.expert;
@@ -23,3 +23,15 @@ static void m2()
 System.out.println("static methods m2 will be called without the instance of the class created");
 }
 }
+
+/*output:
+
+F:\java by dragon\java programms>javac -d . Expert.java
+
+F:\java by dragon\java programms>javac Expert.java
+
+F:\java by dragon\java programms>java AlphA.expert.Expert
+
+static methods m1 will be called without the instance of the class created
+static methods m2 will be called without the instance of the class created
+my main method alpha
