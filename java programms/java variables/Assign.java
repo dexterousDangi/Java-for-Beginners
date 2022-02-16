@@ -7,10 +7,14 @@ int b = 14;
 
 
 static void m1()
-{Term t = new Term();
+{
+Term t = new Term();
 System.out.println("another static method "+ t.b);
 System.out.println("static method  " + t.a);
-}// when ever method is completed, object is destroyed.
+}
+
+// when ever method is completed, object is destroyed.
+
 static void m2()
 {Term t1 = new Term();
 System.out.println("static method  " + t1.a);
