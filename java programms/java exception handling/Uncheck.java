@@ -23,7 +23,7 @@ System.out.println("st4");
 /*output:
 
 F:\java by dragon\java programms\java exception handling>javac Uncheck.java
-                                                                           // here compiler is unable to check for the exception  
+                                                                           // here compiler is unable to check for the exception   
 F:\java by dragon\java programms\java exception handling>java Uncheck
 st1
 st2
