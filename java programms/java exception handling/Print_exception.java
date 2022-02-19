@@ -23,14 +23,20 @@ catch (ArithmeticException ae)
 {
 System.out.println(ae.toString());
 System.out.println(ae);
-System.out.println(ae.getMessage());
-ae.printStackTrace();
+                       // both are same
+
+
+System.out.println(ae.getMessage());  // just to tell you the exception message
+
+
+ae.printStackTrace();     // most recommended approach 
+                          // tell you about all the stack information and exception as well
 }
 } 
 public static void main(String []arg)
 {
 new Tap().m1();
-}
+} 
 }
 
 /*output:
