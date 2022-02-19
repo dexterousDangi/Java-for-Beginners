@@ -1,0 +1,29 @@
+//Exceptional handling : try, catch, finally, throw and throwable
+// completed topic: try-catch block
+// current topic: finally block
+
+
+// only in 2 cases finally block will not be executed
+// first, when we use System.exit(0)
+// second, when
+
+
+
+class Final_notExecuted
+{
+public static void main(String []args)
+{
+try
+ {
+System.out.println(10/0);
+}
+catch (ArithmeticException ae)
+{
+System.out.println("catch");
+}
+Finally 
+{
+System.out.println("finally block");
+}
+}
+}
