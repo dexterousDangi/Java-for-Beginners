@@ -1,0 +1,29 @@
+
+//2) -a) creation of user defined un-checked exception by using default constructor approach:
+
+
+
+import java.util.Scanner;
+class  About_throw
+{
+static void status(int age)
+{ 
+if (age>20)
+{
+ System.out.println("Allowed for marriage");
+
+}
+else   
+{
+throw new InvalidAgeException();}
+              // this is zero argument constructor(InvalidAgeException(empty))
+}
+public static void main(String []args) 
+{
+Scanner s = new Scanner(System.in );
+System.out.println(" Enter your age");
+
+int age= s.nextInt();
+About_throw.status(age);
+}
+}
