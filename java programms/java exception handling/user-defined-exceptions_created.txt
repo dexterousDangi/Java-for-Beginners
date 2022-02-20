@@ -1,0 +1,61 @@
+// about throw keyword:  here we are having two approach of using throw keyword
+// first we can use throw keyword for predefined exception modification (not a recommended approach, because we don't want to paly with predefined information)
+// second we can use throw keyword for user defined exception (like in bank atm's, we get a insufficent balance exception i.e., is a user defined exception not a predefined exception in java)
+//second use is recommended approach
+
+
+/* there are two type of user defined exceptions: 
+
+1) user defined checked exception- there is also two approach to create such exceptions
+
+a) default constructor approach
+b) parameterized constructor approach
+
+
+2) user defined un-checked exception- there is also two approach to create such exceptions
+
+a) default constructor approach
+
+b) parameterized constructor approach
+
+*/
+
+//1) -a) creation of user defined checked exception by using default constructor approach:
+//---------------------------------------------------------------------------------
+//step 1:(file no.1)
+
+
+class InvalidAgeException extends Exception // by extending exception class it became checked exception class
+
+{ // empty body
+  // default constructor is generated. zero argument constructor
+}
+
+
+//step 2: (file no.2) use these exceptions in our application
+
+
+import java.util.Scanner;
+class  About_throw
+{
+static void status(int age)
+{ 
+if (age>20)
+{
+ System.out.println("Allowed for marriage");
+
+}
+else   
+{
+throw new InvalidAgeException();}
+              // this is zero argument constructor(InvalidAgeException(empty))
+}
+public static void main(String []args) 
+{
+Scanner s = new Scanner(System.in );
+System.out.println(" Enter your age");
+
+int age= s.nextInt();
+About_throw.status(age);
+}
+}

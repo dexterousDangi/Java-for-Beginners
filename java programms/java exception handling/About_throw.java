@@ -21,6 +21,8 @@ if (age>20)
 }
 else    // here we are creating object for predefined exception and 
           // printing our own message 
+            // not a great approach because we are changing the existing data.
+
 {
 throw new ArithmeticException("not eligible underage fellow");}
 }
