@@ -9,7 +9,7 @@
 
 // immutable behaviour of string class 
 // mutable behaviour of stringbuffer class
-
+ 
 class Adding_string
 {
 public static void main(String []rgs)
