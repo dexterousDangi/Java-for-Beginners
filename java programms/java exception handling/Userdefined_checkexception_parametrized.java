@@ -18,7 +18,7 @@ if (age>20)
 }
 else   
 {
-throw new InvalidAgeException("not eligible please wait for some time ");}
+throw new InvalidAgeException("not eligible please wait for some time ");}  // here while calling the constructor we pass the string value
              
              // this is parameterized constructor(InvalidAgeException(parameter_list))
 }
