@@ -1,12 +1,17 @@
 // about string manipulation
 // difference between string and stringbuffer class
+// object creation of string class is possible in 2 ways (directly using string class name,second is by using new keyword)
+// object created directly stored in the scp (string constant pull) memory .
+// object created using new keyword are stored in the heap memory.
 
-// double operator(==): used to compare the two reference variables
+// object creation of stringbufferclass in possible only using new keyword
+
+// double operator(==): used to compare the two reference variables; return value is boolean type
 // if both are pointing to same object it returns 'true' otherwise 'false'.
 // scp = string constant pull memory
 
 
-
+  
 class Simple_string
 
 {
@@ -28,20 +33,32 @@ System.out.println(s3);
 System.out.println(s4);
 
 
-
 StringBuffer sb1 = new StringBuffer ("Alpha Fan");  // only approach
                                      
                                        // there is only one approach to create the object of StringBuffer class
 System.out.println(sb1);
 
-//usage of double operator(==): to compare reference variables
+//usage of double operator(==): to compare reference variables , always returns boolean values
+// if both the reference variable  are pointing towards same object
+// then value returned is true otherwise false is printed
 
 System.out.println(s1==s2);
 System.out.println(s2==s3);
 System.out.println(s3==s1);
-
-
-
 }
 }
-  
+  /*output:
+
+F:\java by dragon\java programms\string manipulation>javac Simple_string_info.ja
+va
+
+F:\java by dragon\java programms\string manipulation>java Simple_string
+Dangi1
+Dangi21
+Dangi1
+Dangi2
+Alpha Fan
+false
+false
+true
+*/
