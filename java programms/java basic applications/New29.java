@@ -1,4 +1,4 @@
-// odject cloning: used to maintain backup of the data at earlier stage
+// odject cloning: used to maintain backup of the data at earlier stage 
 // to create a class duplciate object, first you "implements Cloneable" interface
 
 /* normal example: 
