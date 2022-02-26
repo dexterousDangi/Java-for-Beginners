@@ -15,6 +15,7 @@ public static void main(String []args) throws ClassNotFoundException, IOExceptio
 FileInputStream fis = new FileInputStream("abc.txt");
         
 ObjectInputStream ois=new ObjectInputStream(fis);
+						//(we can also use:ObjectInputStream ois=new ObjectInputStream(new FileInputStream("abc.txt")), used at project level , only one line of code)
 					// want to read the data of fis object which is abc.txt file
 
        // ObjectInputStream class contains readObject() mehtod, which we use to read the object.
