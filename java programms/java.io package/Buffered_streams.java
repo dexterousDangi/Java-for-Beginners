@@ -6,10 +6,11 @@
 
 // Buffered Stream: contains 4 classes
 
-// BufferedInputStream
-// BufferedOutputStream
-// BufferedReader
-// BufferedWriter
+// BufferedInputStream: read method for this channel is read() of int return type
+// BufferedOutputStream: write method for this channel is write()
+
+// BufferedReader: read method for this channel is readLine(); and return type is string here
+// BufferedWriter: write method is write(); only
 
 import java.io.*;
 
@@ -33,6 +34,8 @@ while((str2=br.readLine())!=null)	// to check if we reached the end of the data 
 {
 System.out.println(str2);
 bw.write(str2);   // write() method can write the data in single line only
+bw.newLine(); 	// control shift to new line and we can write line to line then only
+
 }
 
 br.close();
