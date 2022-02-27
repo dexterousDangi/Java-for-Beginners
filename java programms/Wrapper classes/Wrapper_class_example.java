@@ -4,8 +4,9 @@
 // so to satisfy the java's objects need , we uses these 8 wrapper class to 
 //provide objects of these 8 premitive data types
 
-
-
+// why we use wrapper class object, because "collection" framework only support objects, 
+// and we can't clone primitive data types but we can clone wrapper class objects
+// and serialization is only done for object data
 /* 
 data type	wrapper-class  		 constructors (parameter expecting)
  

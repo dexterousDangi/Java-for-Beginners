@@ -5,7 +5,6 @@
 // Interger class contains overriden toString() method. which return the object data into string format.
 
 
-
 class Wrapper_to_primitive
 {
 public static void main(String []args)
