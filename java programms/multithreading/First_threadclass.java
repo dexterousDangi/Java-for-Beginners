@@ -13,6 +13,9 @@
 //  thread is going to execute first, it also vary form os to os and also vary form processor to processor.
 // we can predict the exect output but can guess possible output.
 
+
+// if we don't use the start() method then your thread will not be registered and thread will not be executed .
+
 // thread scheduler internally follows two algorithems to execute the algorithm:
 //1) pre-emptive algo
 //2) time-slicing algo
