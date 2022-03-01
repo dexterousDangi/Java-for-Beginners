@@ -40,13 +40,18 @@ Mythread1 t1= new Mythread1();
 
 t1.start();
 
-Mythread2 t2= new Mythread2();
-
+Mythread2 t2=  new Mythread2();
 t2.start();
 
 Mythread3 t3= new Mythread3();
 
 t3.start();	
+
+		// recommended approach nameless ojbect creation
+
+ new Mythread1().start();
+ new Mythread2().start();
+ new Mythread3().start();
 
 System.out.println("hi boy having fun in main");
 }
@@ -56,14 +61,21 @@ System.out.println("hi boy having fun in main");
 /* you can predict the behaviour of thread schedular
 output:
 
-F:\java by dragon\java programms\multithreading>java ThreadDemo4
-hi boy are you goood
-hi boy doing fine
-hi boy having fun in main
-hi boy having fun
 
 F:\java by dragon\java programms\multithreading>java ThreadDemo4
 hi boy are you goood
+hi boy doing fine
+hi boy having fun
+hi boy having fun in main
+hi boy doing fine
+hi boy having fun
+hi boy are you goood
+
+F:\java by dragon\java programms\multithreading>java ThreadDemo4
+hi boy are you goood
+hi boy having fun
+hi boy are you goood
+hi boy doing fine
 hi boy doing fine
 hi boy having fun
 hi boy having fun in main
