@@ -26,9 +26,20 @@ void m2()    		// Inner class methods can access outer class methods
 System.out.println("Inner class--->"+ (x+y));
 }
 }
+public static void main(String [] args)
+{ 
+Outer o = new Outer();
+o.m1();
+Outer.Inner i = o.new Inner();
+i.m2();
+}
 }
 
 
+
+
+
+/*
 class Topclass
 {
 public static void main(String [] args)
@@ -39,13 +50,22 @@ Outer.Inner i = o.new Inner();
 i.m2();
 }
 }
- 
+*/ 
+
+
 /*output:
 
 
 F:\java by dragon\java programms\Nested class>javac simple_nestedClass_app.java
 
 F:\java by dragon\java programms\Nested class>java Topclass
+
+outclass--->98
+
+Inner class--->133
+
+
+F:\java by dragon\java programms\Nested class>java Outer
 
 outclass--->98
 
