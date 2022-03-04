@@ -3,7 +3,9 @@
 //when we decalre any method private, in entire java it means that only one class can access it but, we
 // can also access private properties of outer class
 
-
+// inside inner class "static variables" declaration is not allowed
+//so main method is also not allowed inside the inner class 
+// and this is the reason these classes are called non-static nested classes.
 
 class Outer
 {
@@ -29,10 +31,16 @@ System.out.println("sum of private properties of outer class"+(a+b));
 
 public static void main(String [] args)
 { 
-Outer o = new Outer();
+Outer o = new Outer();  
 o.m1();
+
 Outer.Inner i = o.new Inner();
 i.m2();
+	// above three lines of code can be written in one line
+
+new Outer().new Inner().m2();
+
+
 }
 }
 
@@ -65,3 +73,7 @@ outclass--->98
 Inner class--->133
 outclass--->98
 sum of private properties of outer class98
+Inner class--->133
+outclass--->98
+sum of private properties of outer class98
+*/
