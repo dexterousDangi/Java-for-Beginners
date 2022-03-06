@@ -1,8 +1,9 @@
-// Anonymous inner class usage in case of inerfaces user defined or predefined
+// Anonymous inner class usage in case of predefined inerfaces or user defined
 
 // eg: without using anonymous inner classes
 
-interface It1   // by default abstract
+interface It1   // by default abstract       [consider it as predefined interface like runable, cloneable]
+
 {
 void m1();    // by default public, abstract
 void m2();	// by default public, abstract
