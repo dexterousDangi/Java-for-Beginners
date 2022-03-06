@@ -50,6 +50,7 @@ F:\java by dragon\java programms\Nested class>java Outer
 outer class main method
 10
 34
+345
 10
 34
 

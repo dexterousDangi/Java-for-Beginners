@@ -9,13 +9,14 @@
 // an enclosing instance's non-public fields and methods. Use a static nested class if you don't require this access.
 
 
-
+// we can also declare the class inside a outer class mehtods forloop
 
 class Outer
 { 
 void m1()
-{
- class Inner 
+{System.out.println("method m1() of outer class");
+ 
+class Inner 
 {
  void disp()
 {
@@ -68,6 +69,7 @@ F:\java by dragon\java programms\Nested class>javac Method_local_innerClass.java
 
 F:\java by dragon\java programms\Nested class>java Outer
 
+method m1() of outer class
 method local inner1 class
 method local inner2 class
 method local inner class
