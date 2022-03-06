@@ -5,8 +5,8 @@
 
 package com.withoutanonymous.predefinedSupport;
 
-public class Predefined_classes_withoutAnonymous
+public class Predefined_classes_withoutAnonymous  // package 1
 {
-void m1(){}
-void m2(){}
+public void m1(){}
+public void m2(){}
 }
