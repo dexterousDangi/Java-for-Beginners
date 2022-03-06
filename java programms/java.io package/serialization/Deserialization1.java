@@ -50,7 +50,7 @@ employee name    :dangi   eid   :13
 
 */
 
-/*output: when we use a "transient" modifier
+/*output: when we use a "transient" modifier with string value, then it will return default values 
 
 
 F:\java by dragon\java programms\java.io package\serialization>javac Deserialization1.java
