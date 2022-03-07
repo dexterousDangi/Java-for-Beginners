@@ -2,6 +2,9 @@
 // help us to reduce the length of code , increase readablity, increase maintainablity
 // we dont have to create the extra classes
 
+// but there is one small limitation with this approach i.e., we can't call the same thread twice
+// jvm will throw an exception: "IllegalThreadStateException".
+
 /* case 1:   application without anonymous inner classes
   ----------
 class Mythread1 extends Thread
