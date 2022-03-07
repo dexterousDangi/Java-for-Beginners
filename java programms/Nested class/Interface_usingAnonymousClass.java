@@ -2,6 +2,11 @@
 
 // eg: without using anonymous inner classes
 
+//http://www.javadecompilers.com/ use this site to see what is going internally it will decompile the ".class" file
+
+
+
+
 interface It1   // by default abstract       [consider it as predefined interface like runable, cloneable]
 
 {
@@ -28,14 +33,29 @@ class TestClient
 
 class TestClient
 {
-It1 t = new It1()
+It1 t = new It1()   //TestClient$1 this file is overriding these methods internally
 {
 public void m1()
 {System.out.println("m1 method of interface It1 using anonymous inner classes");
+System.out.println(t.getClass().getName());
 }
 public void m2()
 {System.out.println("m2 method of interface It1 using anonymous inner classes");
 }
+
+/*
+internally what is happing: TestClient$1
+
+class TestClient$1 implements It1 {
+    public void m1() {
+        System.out.println("m1 method of interface It1 using anonymous inner classes");
+    }
+    
+    public void m2() {
+        System.out.println("m2 method of interface It1 using anonymous inner classes");
+    }
+}
+*/
 
 };
 
