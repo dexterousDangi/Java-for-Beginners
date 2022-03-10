@@ -3,7 +3,7 @@
 // we can create an array of interger type or say boolean type 
 // and of user defined type also. (like an array of userdefined class type)
 
-// syntax: which_type [] reference_variable = new which_type[size_required];
+// syntax of instantiation an array: which_type [] reference_variable = new which_type[size_required];
 
 class A{}
 
@@ -13,6 +13,8 @@ public static void main(String []args)
 { 
 int []a3 = new int [4];	// here we instantiated an integer array , which contians default values of integer type
 			// and when we assign the value to array it is replaced by the corresponding value.
+a3[0]=12;
+a3[1]=24;
 
 for(int aa:a3)
 {
@@ -46,8 +48,9 @@ F:\java by dragon\java programms\java basic applications>javac Default_array_val
 
 F:\java by dragon\java programms\java basic applications>java Default_array_values
 
-0
-0
+
+12
+24
 0
 0
 false
