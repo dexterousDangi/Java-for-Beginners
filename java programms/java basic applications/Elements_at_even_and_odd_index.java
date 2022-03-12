@@ -5,21 +5,25 @@ class Elements_at_even_and_odd_index
 public static void main(String [] args)
 {
 String [] s1={"aaa", "bbb", "ccc", "ddd", "eee"};
-System.out.println("elements of the string array");
+ System.out.println("elements of the string array");
 for(String s2:s1)
 {System.out.println(s2);}
 
 System.out.println();
 
 System.out.println("elements at even index value:");
-for(int i=0; i<s1.length;i=i+2)
-{System.out.println(s1[i]);}
+for(int i=0; i<s1.length;i+=2)  //i+=2
+{
+System.out.println(s1[i]);
+}
 
 System.out.println("elements at odd index value:");
-for (int j=1; j<s1.length;j=j+2)
+
+for (int j=1; j<s1.length;j+=2)  //j+=2
 {System.out.println(s1[j]);}
 }
 }
+
 /*output:
 
 
@@ -41,3 +45,4 @@ eee
 elements at odd index value:
 bbb
 ddd
+*/
