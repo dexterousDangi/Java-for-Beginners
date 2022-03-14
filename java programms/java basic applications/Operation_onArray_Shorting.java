@@ -23,7 +23,7 @@ for (int j=i+1;j<a.length; j++)
      //--------                    always keep in mind that "j"'s value must be one more than i's value.
 
 {
-if (a[j]<a[min])
+if (a[j]<a[min])   // use it
 {
 min =j;
 }
@@ -52,7 +52,8 @@ System.out.print(" "+bb);
 
 //bubble short 
 //-------------
- int temp1;
+ 
+int temp1;
 int flag; // used  prevent the unwanted running of loop when the list is shorted earlier than running all the rounds
 
 for(int k=0; k<b.length; k++)
