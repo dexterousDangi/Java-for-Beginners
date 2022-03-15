@@ -1,0 +1,39 @@
+/*  Collection framework: The collections framework is a unified architecture for representing and manipulating 
+collections, enabling them to be manipulated independently of the details of their representation. 
+It reduces programming effort while increasing performance. It enables interoperability among unrelated APIs, 
+reduces effort in designing and learning new APIs, and fosters software reuse.
+ The framework is based on more than a dozen collection interfaces. 
+
+collection framework is providing very good architecture to store the data and to manipulate the data.
+
+collection framework conatins grounp of classes and interfaces all these classes and interfaces are present in java.util package.
+
+unlike the array we can access predefined methods. 
+
+collections are growable in nature , which can only stroe the object type data only not the primitive 
+
+collections able to hold hetrogenous data.
+
+the root interface of collection framework is "collection" interface.
+
+collection Interface---> list interface which in response contains four implementation classes: arraylist, linkedlist ,vector and stack classes.
+
+each collection class contain certain characteristics , which vary form class to class of collection .
+
+characteristics vary because of certain factors
+
+like 
+
+1) classes are introduced in different java versions
+2) some class support only homogenous data like (treeset and treemap), while some classes support heterogenous data.
+3) some classes allowed duplicate object while some classes doesn't allowed duplicate objects like (hashset class). 
+4) some classes allowed null insertitons while some classes didnt allowed null insertition .
+5) in some classes insertition order in preserved while in some classes did not.
+6) some provided synchronized method while some provide un synchronized methods.
+7) according to underlying data structre of the classes corresponding methods are used.
+8) to retrive the data from the corresponding objects some certain cursors are allowed for specific classes
+
+
+these 8 properties or characteristics are varied form collection class to class.
+
+*/
