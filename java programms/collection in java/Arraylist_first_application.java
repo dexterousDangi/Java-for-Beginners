@@ -41,6 +41,9 @@ System.out.print(al);
  as we know collections only used to store the object type data only, and we are using primitive data directly,
 but internally java compiler is creating wrapper class object or these primitive type data type
 
+this concept is called autoboxing.
+
+
    ArrayList arraylist = new ArrayList();
         arraylist.add(Integer.valueOf(10));
         arraylist.add(Double.valueOf(7.7000000000000002D));
