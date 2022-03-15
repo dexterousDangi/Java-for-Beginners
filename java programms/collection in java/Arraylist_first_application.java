@@ -15,7 +15,7 @@ it internally implements list interface.
 
 */
 
-import java.util.*;
+import java.util.ArrayList;
 
 class Arraylist_first_application
 {
@@ -30,7 +30,7 @@ al.add(7.7);
 al.add("dangi");
 al.add('a');
 al.add(10);    // duplicate objects are also allowed in the arraylist.
-
+al.add(null);
 System.out.print(al); 
 				// we can print all the ojects of arraylist just by printing object of arraylist "al".
 
@@ -38,6 +38,15 @@ System.out.print(al);
 }
 
 /*output:
+ as we know collections only used to store the object type data only, and we are using primitive data directly,
+but internally java compiler is creating wrapper class object or these primitive type data type
+
+   ArrayList arraylist = new ArrayList();
+        arraylist.add(Integer.valueOf(10));
+        arraylist.add(Double.valueOf(7.7000000000000002D));
+        arraylist.add("dangi");
+        arraylist.add(Character.valueOf('a'));
+        arraylist.add(Integer.valueOf(10));
 
 
 F:\java by dragon\Java-for-Beginners\java programms\collection in java>javac Arraylist_first_application.java
@@ -47,6 +56,6 @@ Note: Recompile with -Xlint:unchecked for details.                       // we w
 
 F:\java by dragon\Java-for-Beginners\java programms\collection in java>java Arraylist_first_application
 
-[10, 7.7, dangi, a, 10]
+[10, 7.7, dangi, a, 10, null]
 
 */ 
