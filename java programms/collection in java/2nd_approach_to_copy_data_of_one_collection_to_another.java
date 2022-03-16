@@ -16,6 +16,7 @@ public static void main(String []args)
 ArrayList<Emp> a1 = new ArrayList<Emp>();
 a1.add(new Emp(32, "pardeep"));
 a1.add(new Emp(43, "dangi"));
+a1.add();
 
 ArrayList<Emp>a2 = new ArrayList<Emp>(a1); // here just pass the arraylist object in the constructor
 a2.add(new Emp(53, "ram"));
