@@ -1,0 +1,41 @@
+/* Cursors: used to retrieve the data from the collections
+  ---------  why we need cursors when we have for each loop and get method, because while retrieving data
+             using for each loop we can only read data, can not perform operation while  retrieving data
+ 	     and while using get() method we can only access a single index at a time.
+
+  there are three type of cursors: Enumeration , Iterator, List Iterator all these are Interfaces.
+
+1)Enumerator 
+ -----------is  a legacy cursor: can only be used for Legacy classes(vector and stack), not a universal cursor
+can be used for read operation only. to get the object of Enumerator interface use elements() method. while using 
+Enumerator cursor we can only read data in forward direction only. Enumerator interface contains three method.
+i) hasMoreElements(): to check whether collection contains objects or not .Return type is boolean.
+ii) nextElement(): to retrieve the data or to print the data one by one.
+
+2)Iterator 
+---------- cursor is also a interface. Introduced in java 1.2, contains 4 methods. It is a universal cursor , applicable 
+to all class. To get the Object of Iterator interface use iterator() method. It is also able to read the data into forward direction only
+contains 4 methods.
+i) hasNext(): to check whether the collection contains any object or not.
+ii) next(): to retrieve or read the collection data
+iii) remove(): to remove the data from coresponding collecion.
+iv) foreachRemaining(): used to perform the given action for each remaining element sequentially in the current thread.
+
+it can perform one operation while retrieving the data that is Removing the specified objects.
+
+3) ListIterator:
+------------------ this cursor is also introduced in java 1.2 version. It is only applicable only on the list Interface classes(ArrayList, 
+LinkedList, Vector and Stack). It is not a universal cursor. we can get the ListIterator object using listIterator() method. this interface 
+contains 9 methods.
+i) hasNext(): to check that collection contains any object or not. Return type is boolean.
+ii) next(): to retrieve the data for the collection.
+iii) hasPrevious(): to check the data in backward direction. Return type is boolean.
+iv) previous(): to read the data in backward direction.
+v) int nextIndex(): to get the next objects index position.
+vi) int previousIndex(): to get the Index in backward direction.
+vii) remove(): used to remove the data from the collection.
+viii) set(E): to replace the data in the collection. take object as the arguments.
+ix) add(E): used to add the data. Take object as an arguments.
+
+This cursor is able to perform Many operations.
+Able to read the data in both the direction also known as bidirectional.
