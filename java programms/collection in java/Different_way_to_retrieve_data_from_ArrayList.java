@@ -20,7 +20,7 @@ Following are the three approaches:
 					and for generic arraylist as they type safe so we can directly store the object returned by  get() method
 					into the corresponding class oject and directly use it into s.o.p statement.
 3) by using Cursors:
---------------------
+--------------------  explained in next example .
 */
 
 
@@ -35,6 +35,7 @@ public static void main(String [] args)
 System.out.println("normal version of arraylist");
 
 ArrayList a1 = new ArrayList();
+a1.add(new Student (3, "mast"));
 a1.add(new Emp(9,"leo"));
 a1.add(new Emp(10, "karim"));
 
@@ -51,10 +52,15 @@ if (o instanceof Emp)    // have to use instanceof opertor because this arraylis
 Emp e= (Emp)o;                    //have to perform type casting becasue this arraylist is not type safe.
 System.out.println(e.eid+"----"+e.ename);
 }
+if (o instanceof Student)
+{
+Student s2=(Student)o;
+System.out.println(s2.sid+"..."+s2.sname);
+}
 }
 	//second approach
 
-Object o1= a1.get(0);  // get method will retrun the object class object becaue it know it is not typesafe (this arraylist)
+Object o1= a1.get(1);  // get method will retrun the object class object becaue it know it is not typesafe (this arraylist)
 Emp ee = (Emp)o1;       // have to perform type casting  becasue this arraylist is not type safe.
 System.out.println(ee.eid+"..."+ee.ename);
 
@@ -66,12 +72,12 @@ System.out.println(eee.eid+"..."+eee.ename);
 
 System.out.println("Generic version of arraylist");
 
-ArrayList<Emp> al= new ArrayList<Emp> ();
+ArrayList<Emp> al= new ArrayList<Emp> ();  // we can also add the element of the normal array list into genric arraylist, but both has to be containing same class objects.
 al.add(new Emp(243,"deep"));
 al.add(new Emp(23,"sma"));
 System.out.println("size of generic arraylist   "+al.size());
 
-    // first approach
+    // first approach 
 
 for(Emp e2 : al)   // directly can store the collection into emp class because this generic arraylist is type safe
 {
