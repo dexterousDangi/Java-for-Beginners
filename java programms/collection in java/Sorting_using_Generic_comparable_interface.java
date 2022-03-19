@@ -1,6 +1,13 @@
 // using Generic comparable interface to avoid type casting and warning messages during complie time.
 
 
+// there is disadvantages of using comparable interface: 1) we can only use one property to sort the data at one time.
+ 							 2) we have to writing our business logic and sorting logic in the same class. Readebility decreased.
+
+
+// to overcome these disadvantages we are using a new interface "comparator interface".
+
+
 import java.util.*;
 
 class Employee implements Comparable<Employee>

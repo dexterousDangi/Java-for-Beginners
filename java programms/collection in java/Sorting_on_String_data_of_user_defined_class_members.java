@@ -31,8 +31,8 @@ this.ename=ename;
 public int compareTo(Object o)     
 {
 Employee e= (Employee)o;
-return ename.compareTo(e.ename);   // return integer values
-}
+return ename.compareTo(e.ename);   // use "return -ename.compareTo(e.ename);" to reverse the order of the string data
+}                                          //   use negative (-) sign in the return statement to reverse the order of string data.       
 }
 
 
@@ -57,7 +57,7 @@ System.out.println(e.eid+"---"+e.ename);
 } 
 
 /*
-output: on the basis of string data
+output: on the basis of string data, and we can also avoid these warning messages using Generic version of Comparable interface.
 
 F:\java by dragon\Java-for-Beginners\java programms\collection in java>javac Sorting_on_String_data_of_user_defined_class_members.java
 Note: Sorting_on_String_data_of_user_defined_class_members.java uses unchecked or unsafe operations.
