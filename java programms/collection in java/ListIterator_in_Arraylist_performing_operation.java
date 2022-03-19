@@ -19,6 +19,11 @@ Emp e5= new Emp(42, "gam");
 Emp e6= new Emp(420, "gaam ah");
 
 
+
+String sr="ram";
+sr="ma";
+
+
 ArrayList<Emp> al= new ArrayList<Emp>();
 al.add(e1);
 al.add(e2);
@@ -70,7 +75,7 @@ elments in the array  and there size is  4
 342...nagam
 
 42...gam    ----> added ojbect at the position where cursor is pointing currently.
-3....nam
+420...gaam ah ----> replacing the 3...nam
 2....naaam
 342....nagam
 */
