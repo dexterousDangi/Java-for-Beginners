@@ -43,7 +43,7 @@ else
 }
 }
 //--------------------------------------
-class SnameComp implements Comparator         //sorting logic for String type of data
+class SnameComp implements Comparator          //sorting logic for String type of data
 { 
 public int compare (Object o1, Object o2)
 {
@@ -88,7 +88,8 @@ System.out.println(s.sid+"..."+s.sname);
 
 
 /* 
-output:
+output: here we recieve two warning messages : because we are using normal version of comparator and and that is not type safe 
+                                               to get rid of the warning messages use Generic version of Comparator interface.
 
 
 F:\java by dragon\Java-for-Beginners\java programms\collection in java>javac Sorting_using_Comparator_interface.java
