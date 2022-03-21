@@ -70,7 +70,7 @@ System.out.println("  "+itr.next());
 F:\java by dragon\Java-for-Beginners\java programms\collection in java>javac About_set_interface_and_HashSet_class.java
 
 F:\java by dragon\Java-for-Beginners\java programms\collection in java>java HashSet_Intro
-
+3   
 35
 23
 12
