@@ -1,0 +1,42 @@
+^^ classes from list interface ^^
+   ---------------------------
+
+*Arraylist class : constructors:
+				 public java.util.ArrayList(int);
+ 				 public java.util.ArrayList();
+  				 public java.util.ArrayList(java.util.Collection<? extends E>);
+
+*LinkedList class : constructor: 
+				  public java.util.LinkedList();
+				  public java.util.LinkedList(java.util.Collection<? extends E>);
+
+*Vector class : constructor :
+				  public java.util.Vector(int, int);
+                                  public java.util.Vector(int);
+				  public java.util.Vector();
+   				  public java.util.Vector(java.util.Collection<? extends E>);
+
+*Stack class : constructor : 
+				  public java.util.Stack();
+ 
+
+^^ classes form set interface ^^
+   --------------------------
+
+*HashSet class : constructors: 
+				public java.util.HashSet();
+				public java.util.HashSet(java.util.Collection<? extends E>);
+				public java.util.HashSet(int, float);
+				public java.util.HashSet(int); 
+
+*LinkedHashSet class : constructor : 
+				      public java.util.LinkedHashSet(int, float);
+                                      public java.util.LinkedHashSet(int);
+ 			              public java.util.LinkedHashSet();
+				      public java.util.LinkedHashSet(java.util.Collection<? extends E>);		
+
+*TreeSet class : constructor:
+				public java.util.TreeSet();
+                                public java.util.TreeSet(java.util.Comparator<? super E>);
+				public java.util.TreeSet(java.util.Collection<? extends E>);
+				public java.util.TreeSet(java.util.SortedSet<E>);
