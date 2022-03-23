@@ -1,0 +1,69 @@
+// Map Interface: map interface is not a part of collection interface it is a seperate
+		  interface, contains mainly three classes---> hashmap, linkedhashmap and 
+		  treemap classes.
+
+// map are used to store two objects at a time, unlike the list and set interface
+// where we can only store only one object at a time
+// those two object are stored in key+value pair called entry.
+// here key is a object and value is also a object.
+
+//for key, duplicate objects are not allowed.
+// for value, duplicate objects are allowed.
+
+/*Charateristics of HASHMAP class:
+	
+	*introduced in java 1.2
+	*allows heterogenous data
+	*for keys--duplicate objects are not allowed
+	*for values-- duplicate objects are allowed.
+	*for keys-- Null Insertion allowed for once
+	*for values-- Null Insertion is possible for any no. of times
+	*insertion order is not preserved
+	      ---------------------------
+	*underlying data structrue is hashtable.
+	*method present are non-synchronized
+	*cursors are applicable for collection, so for map classes cursors are not allowed
+
+**Charateristics of LINKEDHASHMAP class:
+
+	*introduced in java 1.4
+	*allows heterogenous data
+	*for keys--duplicate objects are not allowed
+	*for values-- duplicate objects are allowed.
+	*for keys-- Null Insertion allowed for once
+	*for values-- Null Insertion is possible for any no. of times
+	*insertion order is preserved
+	 ----------------------------          
+	*underlying data structrue is hashtable+linked list.
+	                             -------------------------  
+	*method present are non-synchronized
+	*cursors are applicable for collection, so for map classes cursors are not allowed
+
+**Charateristics of TreeMap class:
+ 
+	*introduced in java 1.2
+	*insertion order is preserve
+	*allowes only homogenous data	
+
+      and other charatersitics are same as above both classes
+
+*/
+ 
+/*On map interface classes directly cursors are not applicable , but there 
+are some methods whose return type is of collection interface type and 
+you can apply cursors on those collections, to retrieve the data 
+
+different methods are like :
+		 public java.util.Set<K> keySet()  {here return type is set object}
+				//this method is used retrieve the only Key objects data.
+ 
+		 public java.util.Collection<V> values();  {return type is collection interface type}
+                         // this method is used to retrieve the only value objects
+
+                 public java.util.Set<java.util.Map$Entry<K, V>> entrySet();  {return type is set interface}
+                           // used to retrieve the entry data means both the key+value objects both
+
+then use the universal cursor to retrieve the data
+this the way we can use the cursors inside the map interface
+
+*/
