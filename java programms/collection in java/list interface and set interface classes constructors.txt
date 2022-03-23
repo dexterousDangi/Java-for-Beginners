@@ -40,3 +40,34 @@
                                 public java.util.TreeSet(java.util.Comparator<? super E>);
 				public java.util.TreeSet(java.util.Collection<? extends E>);
 				public java.util.TreeSet(java.util.SortedSet<E>);
+
+
+
+^^ classes of Map interface ^^
+   -------------------------
+
+* HashMap class : constructor:
+				public java.util.HashMap(int, float);
+				public java.util.HashMap(int);
+				public java.util.HashMap();
+				public java.util.HashMap(java.util.Map<? extends K, ? extends V>);
+
+
+*LinkedHashMap class : constructor:
+				 public java.util.LinkedHashMap(int, float);
+				 public java.util.LinkedHashMap(int);
+				 public java.util.LinkedHashMap();
+				 public java.util.LinkedHashMap(java.util.Map<? extends K, ? extends V>);
+
+*TreeMap class : constructor:
+
+				public java.util.TreeMap();
+				public java.util.TreeMap(java.util.Comparator<? super K>);
+				public java.util.TreeMap(java.util.Map<? extends K, ? extends V>);
+				public java.util.TreeMap(java.util.SortedMap<K, ? extends V>);
+
+
+
+
+
+
