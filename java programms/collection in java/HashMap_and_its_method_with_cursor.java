@@ -18,14 +18,14 @@ class HashMap_and_its_method_with_cursor
 {
 public static void main(String [] args)
 {
-HashMap h1 = new HashMap();
+HashMap<Integer,String> h1 = new HashMap<Integer,String>();
 
 h1.put(12,"dangi");
 h1.put(12,"pardeep");  // as we know duplicate objects for key objects are not support, considered as only one occurence and data inconsistency will be there
 
 System.out.println(h1);
 
-HashMap h2 = new HashMap();
+HashMap<Integer,String> h2 = new HashMap<Integer,String>();
 h2.put(111,"pardeep");
 h2.put(222,"dangi");
 h2.put(333,"dangi");  // but for value object we can provide duplicate objects
@@ -39,37 +39,46 @@ Iterator i1 = s.iterator();       // using cursor in map collection
 while (i1.hasNext())
 {
 Integer ii =(Integer)i1.next();
-
 System.out.println(ii);
 }
 
-Collection c = h2.values();
-Iterator i2 = c.iterator();       // using cursor in map collection       
+Collection<String> c = h2.values();
+Iterator<String> i2 = c.iterator();       // using cursor in map collection       
 while (i2.hasNext())
 {
-
-String se=(String)i2.next();
-
+String se=i2.next();
 System.out.println(se);
 }
 
-Set ss = h2.entrySet();
-Iterator i3= ss.iterator();
+
+
+Set<Map.Entry<Integer,String>> ss = h2.entrySet();
+Iterator<Map.Entry<Integer,String>> i3= ss.iterator();
 while (i3.hasNext())
 {
-Map.Entry ee = (Map.Entry)i3.next();   // here next() method will return entry type data, type cast it to Map.Entry and print the data.
-
+Map.Entry<Integer,String> ee = i3.next();   // here next() method will return entry type data, type cast it to Map.Entry and print the data.
 System.out.println(ee);
 }
+//or 
+
+Set<Map.Entry<Integer,String>> sss = h2.entrySet();
+Iterator<Map.Entry<Integer,String>> i4= ss.iterator();
+
+while(i4.hasNext())
+{
+Map.Entry<Integer,String> ent = i4.next();
+Integer iz=ent.getKey();
+System.out.println(iz);
+
+String tri=ent.getValue();
+System.out.println(tri);
 }
 }
-/*output:
+}
+/*output: using every thing generic
 
 
 F:\java by dragon\Java-for-Beginners\java programms\collection in java>javac HashMap_and_its_method_with_cursor.java
-
-Note: HashMap_and_its_method_with_cursor.java uses unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
 
 F:\java by dragon\Java-for-Beginners\java programms\collection in java>java HashMap_and_its_method_with_cursor
 
@@ -89,6 +98,12 @@ pardeep
 222=dangi
 111=pardeep
 
+333
+dangi
+222
+dangi
+111
+pardeep
 */
 
 
