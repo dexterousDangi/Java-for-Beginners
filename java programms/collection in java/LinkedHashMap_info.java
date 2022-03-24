@@ -51,3 +51,29 @@ System.out.println(s2.sid+"---"+s2.sname);
 }
 }
 }
+
+/*output: 
+
+F:\java by dragon\Java-for-Beginners\java programms\collection in java>javac LinkedHashMap_info.java
+
+F:\java by dragon\Java-for-Beginners\java programms\collection in java>java LinkedHashMap_info
+
+111---dangi
+222---ram
+333---sam
+
+111---dangi
+222---ram
+333---sam
+1---geo
+2---neo
+3---leo
+
+111---dangi
+1---geo
+222---ram
+2---neo
+333---sam
+3---leo
+
+*/
