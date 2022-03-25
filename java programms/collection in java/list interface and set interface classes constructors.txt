@@ -53,7 +53,7 @@
 				public java.util.HashMap(java.util.Map<? extends K, ? extends V>);
 
 
-*LinkedHashMap class : constructor:
+*LinkedHashMap class : constructor: public java.util.LinkedHashMap(int, float, boolean);
 				 public java.util.LinkedHashMap(int, float);
 				 public java.util.LinkedHashMap(int);
 				 public java.util.LinkedHashMap();

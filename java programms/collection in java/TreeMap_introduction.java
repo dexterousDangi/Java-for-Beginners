@@ -4,6 +4,7 @@
 // not on the basis of value objects.
 // treemap methods are non-synchronized in nature.
 //treemap class contains four constructors.
+// to perform sorting data must be homogenous and class must implements comparable interface whose data we are sorting
 
 import java.util.*;
 class TreeMap_introduction
