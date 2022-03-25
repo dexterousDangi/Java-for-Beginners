@@ -19,10 +19,17 @@ t.put("chunu", 23);
 	//here string data is used to perform sorting, and string class internally by default implementing
 	// comparable interface, then no issues.
 
-System.out.println(t);  
+System.out.println(t); 
+
+Collection c =t.keySet(); 
+System.out.println(c);
+
+Set<Map.Entry<String,Integer>> s =t.entrySet();   // here set contains both objects and can be sorted into object o.
+for(Map.Entry amp :s)
+{
+System.out.println(amp);}
 
 TreeMap<Integer, String> tm= new TreeMap<> ();   // integer is of wrapper class, which also by default implementing comparable interface
-
 tm.put(120,"alpha");
 tm.put(12,"beta");
 tm.put(122,"delta");
@@ -31,7 +38,17 @@ tm.put(1,"sigma");
 	// now sorting is done on the based of integers, because now they are acting as the key objects
 
 System.out.println(tm);
+Set<Integer> d =tm.keySet(); 
+System.out.println(d);
 
+Set<Map.Entry<Integer,String>> s1 = tm.entrySet();
+Iterator<Map.Entry<Integer,String>> itr=s1.iterator();
+while(itr.hasNext())
+{
+Map.Entry<Integer,String> me = (Map.Entry)itr.next();
+String srt = me.getValue();
+System.out.println(srt);
+}
 }
 }
 
@@ -39,10 +56,21 @@ System.out.println(tm);
 
 F:\java by dragon\Java-for-Beginners\java programms\collection in java>javac TreeMap_introduction.java
 
+
 F:\java by dragon\Java-for-Beginners\java programms\collection in java>java TreeMap_introduction
 
 {anny=22, chunu=23, durga=43, ratna=12}
-
+[anny, chunu, durga, ratna]
+anny=22
+chunu=23
+durga=43
+ratna=12
 {1=sigma, 12=beta, 120=alpha, 122=delta}
+[1, 12, 120, 122]
+sigma
+beta
+alpha
+delta
+
 
 */
