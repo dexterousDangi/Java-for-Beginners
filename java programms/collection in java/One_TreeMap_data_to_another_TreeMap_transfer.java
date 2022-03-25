@@ -15,7 +15,7 @@ TreeMap<String, Integer> t1 = new TreeMap<>();
 t1.put("amid", 11);
 t1.putAll(t);
 
-TreeMap<String, Integer> tm = new TreeMap<>(t1,t);
+TreeMap<String, Integer> tm = new TreeMap<>(t1);
 tm.put("team", 12);
 
 System.out.println(tm);
