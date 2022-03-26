@@ -1,0 +1,42 @@
+// all the collection classes and map classes are un-synchronized in nature.
+// execpt Vector and Stack class of collection interface.
+
+
+/*****all these synchronized methods present  in collections class *****/
+
+
+//to make hashset and linkedhashset class synchronized version
+// use---> synchronizedSet() method
+             /**************/ 
+
+// and for synchronized treeset class use ---> synchronizedSortedSet() method
+                                               /***********************/
+
+// to make the ArrayList and LinkedList class of synchronized version use:
+// use ----> synchronizedList() method.
+             /********************/
+
+// vector and stack classes are already synchronized version
+
+// to make the HashMap and LinkedHashMap class of synchronized version use:
+// synchronizedMap() method.
+    /*******************/
+
+// and for synchronized treemap class use ---> synchronizedSortedMap().
+                                              /*******************/                
+
+ArrayList al = new ArrayList();    // non-sync
+List L = Collections.synchronizedList(al);   // sync
+                                    /**********/
+
+HashSet h= new HashSet();  // non-sync
+SortedSet ss= Collections.synchronizedSet(h); // sync
+                                      /************/ 
+
+TreeMap tm = new TreeMap();   // non-sync
+SortedMap sm = Collections.synchronizedSortedMap(tm); // sync 
+                                        /**************/ 
+ 
+TreeSet st= new TreeSet();   // non-sync
+SortedSet sr= Collections.synchronizedSortedSet(st); // sync
+                                            /*********/
