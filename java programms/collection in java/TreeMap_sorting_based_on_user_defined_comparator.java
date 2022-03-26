@@ -4,7 +4,7 @@ class EnameComp implements Comparator<Emp>
 {
 public int compare(Emp e1, Emp e2)
 {
-return -(e1.ename).compareTo(e2.ename);
+return -(e1.ename).compareTo(e2.ename);  // will return the output in desecnding order of strings
 }
 }
 

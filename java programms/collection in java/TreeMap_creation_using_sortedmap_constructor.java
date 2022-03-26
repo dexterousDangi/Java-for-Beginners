@@ -46,4 +46,19 @@ System.out.println(t4);
 
 }
 }
+/*
+output:
 
+F:\java by dragon\Java-for-Beginners\java programms\collection in java>javac TreeMap_creation_using_sortedmap_constructor.java
+
+F:\java by dragon\Java-for-Beginners\java programms\collection in java>java TreeMap_creation_using_sortedmap_constructor
+
+{1=neo, 3=meo, 4=geo, 5=jio, 6=rio, 7=leo, 9=deo}
+
+{3=meo, 4=geo, 5=jio, 6=rio, 7=leo} ---> subMap(3,9)  exculding 9
+
+{5=jio, 6=rio, 7=leo, 9=deo}    ----> tailMap(5)     including 5
+
+{1=neo, 3=meo, 4=geo}    ----> headMap(5)          excluding 5
+
+*/
