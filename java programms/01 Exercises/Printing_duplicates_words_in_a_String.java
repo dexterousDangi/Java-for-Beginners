@@ -15,7 +15,7 @@ System.out.println(Arrays.toString(s));
 
 for (String ss:s)
 {
-if(hm.get(ss)!=null)
+if(hm.get(ss)>=1)
 {
 hm.put(ss,hm.get(ss) +1);
 }
