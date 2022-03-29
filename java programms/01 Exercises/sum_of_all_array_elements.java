@@ -28,6 +28,8 @@ for(int aa : a)
  sum = sum+aa;
 }
 System.out.println("sum of all elements-->"+sum);
+sc.nextLine();
+System.out.println(sc.nextLine());
 
 }
 }
