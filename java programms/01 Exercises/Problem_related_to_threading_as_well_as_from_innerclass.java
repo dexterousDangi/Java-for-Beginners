@@ -1,5 +1,9 @@
 // question on nested class as well as form interface:
 
+//Inner classes cannot declare static members other than compile-time constants.
+
+
+
  class Outer_class
 {
 public static void main(String []args)
@@ -24,6 +28,8 @@ System.out.println(Inner_class.name);
 thread.start();
 }
 }
+
+
 /*output: here a normal inner class is printing static variable
 
 
