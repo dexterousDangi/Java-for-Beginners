@@ -4,17 +4,16 @@ import java.util.Scanner;
 
 class Reverse_a_number
 {
+int rev =0;
+int rem=0;
 
-public static void reverseOfNumber(int number)
+public  void reverseOfNumber(int number)
 {
-
-int rev,rem=0;
-
 while( number != 0 )
 {
 rem = number%10;
 
-rev = rev*0+rem;
+rev = rev*10+rem;
 
 number = number/10;
 }
@@ -27,6 +26,9 @@ public static void main(String []args)
 Scanner scan = new Scanner(System.in);
 System.out.println("Enter a number , whose reverse will be printed");
 int num = scan.nextInt();
-reverseOfNumber(num);
+
+Reverse_a_number rn = new Reverse_a_number();
+
+rn.reverseOfNumber(num);
 }
 }
