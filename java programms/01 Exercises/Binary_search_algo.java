@@ -35,12 +35,14 @@ int low=0;  // lower index
 int high= num.length-1;   // last index value
 int mid=0;      // middle value
 mid =(low+high)/2;
-
+int check =0;
 while(low<=high) // till when to perform the operations
 {
 if(num[mid] ==item)
 {
+
 System.out.println("searched item is present at "+ mid+ "  index");
+check= check+1;
 break;}
 else if (num[mid]<item)
 {
@@ -52,6 +54,9 @@ high= mid-1;
 }
 mid=(low+high)/2;
 }
+
+if (check==0)
+System.out.println("item is not present in given array");
 }
 }
 
