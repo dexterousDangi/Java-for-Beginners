@@ -25,21 +25,21 @@ public class FirstApplication implements Servlet {
 	 * @see Servlet#init(ServletConfig)
 	 */
 	public void init(ServletConfig config) throws ServletException {
-		// TODO Auto-generated method stub
+		System.out.println("this is init() method....");
 	}
 
 	/**
 	 * @see Servlet#destroy()
 	 */
 	public void destroy() {
-		// TODO Auto-generated method stub
+		System.out.println("this is destroy() method");
 	}
 
 	/**
 	 * @see Servlet#getServletConfig()
 	 */
 	public ServletConfig getServletConfig() {
-		// TODO Auto-generated method stub
+		System.out.println("this is getServletConfig() method");
 		return null;
 	}
 
@@ -47,7 +47,7 @@ public class FirstApplication implements Servlet {
 	 * @see Servlet#getServletInfo()
 	 */
 	public String getServletInfo() {
-		// TODO Auto-generated method stub
+	System.out.println("this is getServletInfo() method ");
 		return null; 
 	}
 
@@ -56,6 +56,7 @@ public class FirstApplication implements Servlet {
 	 */
 	public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {
 		
+		System.out.println("this is service() method");
 		// for every servlet application these two steps are common
 		// setp 1: set the response type we are sending towards client side 
 		
@@ -63,7 +64,7 @@ public class FirstApplication implements Servlet {
 		
 		// step 2: add the response to the response object using  PrintWriter object.
 	
-		 PrintWriter writer=response.getWriter();
+		  PrintWriter writer=response.getWriter();
 		 writer.println("this is servlet first application...");
 		
 	}
